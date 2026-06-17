@@ -5,4 +5,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "¡Hola desde GH Actions!"
-      - run: echo "Actuador: ${{ github.actor }}, evento: ${{ github.event_name }}
+      - run: |
+          echo "Actuador: ${{ github.actor }}, evento: ${{ github.event_name }}"
