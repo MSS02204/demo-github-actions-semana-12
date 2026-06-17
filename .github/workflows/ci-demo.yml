@@ -1,0 +1,8 @@
+name: Hola‑CI
+on: [push]
+jobs:
+  demo:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "¡Hola desde GH Actions!"
+      - run: echo "Actuador: ${{ github.actor }}, evento: ${{ github.event_name }}
